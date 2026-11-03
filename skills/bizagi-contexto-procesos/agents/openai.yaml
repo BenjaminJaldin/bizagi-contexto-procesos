@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bizagi: contexto de procesos"
+  short_description: "Modela procesos con actores y subprocesos justificados"
+  default_prompt: "Usa $bizagi-contexto-procesos para analizar el contexto, definir actores y modelar el trabajo, descomponiendo solo operaciones extensas."

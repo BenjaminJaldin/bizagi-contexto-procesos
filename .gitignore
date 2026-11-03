@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.bpm
+*.diag
+*.xpdl
+*.bpmn
+context.json
+resumen.md
+local-data/
+dist/
+*.egg-info/
