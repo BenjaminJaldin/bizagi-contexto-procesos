@@ -67,23 +67,9 @@ Ordena el flujo de izquierda a derecha, agrupa por responsabilidad, etiqueta ram
 
 Antes de conectar, distribuye las actividades en columnas por avance del proceso y filas por responsable, reservando espacio para decisiones, etiquetas y retornos. Alinea centros y usa separación consistente; amplía el lienzo o las lanes cuando haga falta, sin reducir las cajas hasta volver ilegible el texto.
 
-### Compactar sin congestionar
+### Distribución y revisión visual
 
-Usa el tamaño de las actividades y sus etiquetas para calcular la separación, no columnas enormes de ancho fijo para todo el modelo. Como punto de partida ajustable, para tareas de unos 150–180 por 70–90 píxeles, prueba separaciones horizontales libres de 50–90 píxeles y verticales de 70–120; aumenta solo los intervalos donde haya ramas, etiquetas o varios conectores. Estas medidas orientan la distribución, no son reglas de Bizagi ni garantías de legibilidad.
-
-Acerca tareas consecutivas de una misma ruta; coloca decisiones cerca de la tarea que aporta sus datos y convergencias cerca del punto de retorno. Dimensiona cada lane según el contenido real y sus corredores, sin imponer alturas idénticas ni una gran altura vacía. Mantén un sentido de lectura claro: no pliegues artificialmente la ruta en zigzag para que quepa en una sola pantalla.
-
-Reserva canales distintos para líneas paralelas y retornos, con una separación visual inicial de 15–25 píxeles que se amplía cuando hay etiquetas. Penaliza segmentos compartidos, cruces, quiebres innecesarios y recorridos largos al elegir el trazado. Acercar dos cajas no es una mejora si sus conectores quedan amontonados. Evita crear compuertas redundantes solo para distribuir líneas; preserva la semántica BPMN.
-
-Realiza dos pasadas: primero coloca actividades y decisiones; después enruta líneas, ajusta etiquetas y elimina huecos innecesarios. Tras mover o compactar figuras, recalcula sus conectores y revisa de nuevo. La entrega debe permitir seguir una ruta a un zoom de lectura cómodo, sin desplazamientos desproporcionados entre tareas vecinas. Un lienzo largo puede ser necesario, pero no debe deberse a separaciones vacías repetidas.
-
-- Traza conectores ortogonales por espacios libres. Ninguna línea debe atravesar una actividad, evento, compuerta o etiqueta ajena.
-- Mantén la ruta habitual directa; separa las alternativas y reserva corredores para retornos largos. No apiles retornos sobre una misma línea ni hagas pasar todos por el centro del proceso.
-- Reduce cruces moviendo nodos o puntos de quiebre. Cuando un cruce sea inevitable, debe distinguirse de una unión; no uses segmentos coincidentes que oculten destinos o flechas.
-- Coloca las condiciones junto a su rama con espacio suficiente para leerlas. Evita etiquetas encima de otras líneas o figuras.
-- Mantén cada detalle extenso en su propio diagrama vinculado. No superpongas las coordenadas de varios procesos importados en el lienzo principal.
-
-Revisa en Bizagi tanto la vista general como un zoom de lectura de cada zona: cajas separadas, nombres completos, responsables visibles, flechas inequívocas y ramas rastreables. Ajusta los puntos de conexión y repite la revisión después de importar y guardar; la geometría correcta en el XML no garantiza el mismo resultado en el editor. No declares verificación visual si solo comprobaste el archivo.
+Aplica la [guía de distribución compacta y legible](distribucion-visual.md) al materializar el diseño: columnas según el contenido, corredores separados, trazado que evite cajas y textos, etiquetas completas próximas a sus ramas y comparación semántica antes y después. Revisa tanto el principal como cada detalle en Bizagi a escala general y a un zoom de lectura. No soluciones un dibujo confuso ocultando operaciones simples detrás de nuevos subprocesos.
 
 ## 6. Validación de negocio y de herramienta
 

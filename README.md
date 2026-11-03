@@ -12,6 +12,8 @@ Puedes entregar el contexto con tus palabras. Si falta información importante, 
 
 La diagramación debe ser compacta y legible: actividades cercanas sin superponerse, líneas por corredores separados, etiquetas claras y espacio proporcional al contenido de cada lane. Cada subproceso debe contener un flujo interno y abrir el detalle correcto desde el principal. Estas son instrucciones de trabajo y revisión visual; el puente MCP no incluye un motor automático de distribución.
 
+La [guía de distribución visual](skills/bizagi-contexto-procesos/references/distribucion-visual.md) detalla cómo calcular espacios por contenido, evitar figuras y textos al trazar, colocar condiciones completas cerca de sus ramas y comprobar que la reorganización conserva el proceso. Los criterios se adaptan a cada flujo; las dimensiones orientativas y las reducciones obtenidas en una prueba no se imponen a otros modelos.
+
 Incluye el [método de modelado](skills/bizagi-contexto-procesos/references/modelado-contextual.md) y el [caso ficticio Talleres Bruma](skills/bizagi-contexto-procesos/references/ejemplo-talleres-bruma.md), con Cliente, Administración, Finanzas, Operaciones y Compras/Bodega, negociación, pagos, excepciones y dos subprocesos justificados. El caso es una especificación para dibujar, no un modelo .bpm ya generado.
 
 Crear elementos en Bizagi requiere las herramientas de escritorio del agente. El servidor MCP de este repositorio no proporciona edición de elementos ni generación de diagramas.
